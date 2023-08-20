@@ -1,0 +1,90 @@
+.MediaView{
+  display: flex;
+  flex-direction: column;
+  //margin: 5%;
+  
+  @media (max-width: 1000px) {
+    margin: 0;
+  }
+
+  .MediaInfoContainer{
+    display: flex;
+    height: 20vh;
+    width: 90%;
+    margin: 5%;
+
+    @media (max-width: 1000px) {
+      height: 30vh;
+      flex-direction: column;
+    }
+
+    .MediaCard{
+      border-radius: 15px;
+      border: var(--borderGlass);
+
+      @media (max-width: 1000px) {
+        margin: 10% 10% 0 10%;
+        max-width: 50%;
+        height: 60%;
+      }
+    }
+
+    .MediaInfo{
+      display: flex;
+      align-self: flex-end;
+      margin: 5%;
+      flex-direction: column;
+      color: var(--impactColor);
+    }
+
+    .Info{
+      justify-content: flex-end;
+      align-content: center;
+      border-bottom: var(--borderGlass);
+      color: var(--impactColor);
+      padding-bottom: 5px;
+      font-size: 35px;
+
+      @media (max-width: 1000px) {
+        font-size: 15px;
+      }
+    }
+    .subInfo{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .Type{
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+      }
+    }
+  }
+
+  .MediaChapterContainer{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 5vw;
+
+    .MediaChapter{
+      display: flex;
+      width: 15vw;
+      height: 5vh;
+      border-radius: 10px;
+      background-color: var(--impactColor);
+      color: var(--darkestColor);
+      align-items: center;
+      padding-left: 10px;
+
+      @media (max-width: 1000px) {
+        width: 35vw;
+      }
+    }
+  }
+}

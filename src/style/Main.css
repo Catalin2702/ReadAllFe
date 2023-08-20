@@ -1,0 +1,51 @@
+:root {
+  --primaryColor: #152447;
+  --secondaryColor: #1F4068;
+  --darkestColor: #2D033B;
+  --impactColor: #EAC6F6;
+  --filter: invert(97%) sepia(7%) saturate(5135%) hue-rotate(191deg) brightness(102%) contrast(93%);
+  --borderGlass: 0.5px solid rgba(255, 255, 255, 0.3);
+  --fastTransition: all .5s ease-in-out;
+  --fastestTransition: all .2s ease-out;
+  --customFontSize: "15px";
+  --customBackgroundColor: #2D033B;
+  --shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "San Francisco", sans-serif;
+  transition: 0.3s ease all;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkestColor);
+}
+
+.link, .link:visited, .link:hover, .link:active, .link:focus {
+  display: flex;
+  outline: 0 none !important;
+  border: 0;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Main.css.map */

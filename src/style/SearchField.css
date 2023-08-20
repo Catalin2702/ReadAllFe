@@ -1,0 +1,86 @@
+.search-enter-from, .search-leave-to {
+  transform: translateY(-100px);
+}
+@media (max-width: 1000px) {
+  .search-enter-from, .search-leave-to {
+    transform: translateY(100px);
+  }
+}
+
+.menuButton-enter-from, .menuButton-leave-to {
+  transform: translateY(100px);
+}
+
+.search-enter-to, .search-leave-from, .menuButton-enter-to, .menuButton-leave-from {
+  transform: translateY(0);
+}
+
+.search-enter-active, .search-leave-active, .menuButton-leave-active, .menuButton-enter-active {
+  transition: var(--fastestTransition);
+}
+
+.SearchContainer {
+  display: flex;
+  position: absolute;
+  width: 35vw;
+  height: 60px;
+  left: calc(50% - 17.5vw);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border: var(--borderGlass);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+@media (max-width: 1000px) {
+  .SearchContainer {
+    height: 50px;
+    width: 70vw;
+    left: 25px;
+    bottom: 25px;
+  }
+}
+@media (min-width: 1000px) {
+  .SearchContainer {
+    top: 25px;
+  }
+}
+.SearchContainer .SearchField {
+  background: transparent;
+  width: 80%;
+  border: none;
+  color: var(--impactColor);
+  text-shadow: 0 0 3px black;
+  padding-left: 20px;
+  font-size: 20px;
+}
+.SearchContainer .SearchField:focus {
+  border: none;
+  outline: none;
+}
+.SearchContainer .SearchButton {
+  display: flex;
+  background: transparent;
+  width: 20%;
+  border: none;
+  border-left: var(--borderGlass);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  color: var(--impactColor);
+  text-shadow: 0 0 3px black;
+}
+
+:-ms-input-placeholder {
+  color: var(--impactColor);
+  text-shadow: 0 0 3px black;
+}
+
+::-ms-input-placeholder {
+  color: var(--impactColor);
+  text-shadow: 0 0 3px black;
+}
+
+/*# sourceMappingURL=SearchField.css.map */

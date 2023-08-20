@@ -1,0 +1,13 @@
+.cardContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 5vw;
+  flex-flow: row wrap;
+  padding: 10vh 10vw 10vh 10vw;
+
+  @media (max-width: 1000px) {
+    gap: 10vw;
+    padding: 10vw;
+  }
+}

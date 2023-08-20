@@ -1,0 +1,89 @@
+.MediaView {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .MediaView {
+    margin: 0;
+  }
+}
+.MediaView .MediaInfoContainer {
+  display: flex;
+  height: 20vh;
+  width: 90%;
+  margin: 5%;
+}
+@media (max-width: 1000px) {
+  .MediaView .MediaInfoContainer {
+    height: 30vh;
+    flex-direction: column;
+  }
+}
+.MediaView .MediaInfoContainer .MediaCard {
+  border-radius: 15px;
+  border: var(--borderGlass);
+}
+@media (max-width: 1000px) {
+  .MediaView .MediaInfoContainer .MediaCard {
+    margin: 10% 10% 0 10%;
+    max-width: 50%;
+    height: 60%;
+  }
+}
+.MediaView .MediaInfoContainer .MediaInfo {
+  display: flex;
+  align-self: flex-end;
+  margin: 5%;
+  flex-direction: column;
+  color: var(--impactColor);
+}
+.MediaView .MediaInfoContainer .Info {
+  justify-content: flex-end;
+  align-content: center;
+  border-bottom: var(--borderGlass);
+  color: var(--impactColor);
+  padding-bottom: 5px;
+  font-size: 35px;
+}
+@media (max-width: 1000px) {
+  .MediaView .MediaInfoContainer .Info {
+    font-size: 15px;
+  }
+}
+.MediaView .MediaInfoContainer .subInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.MediaView .MediaInfoContainer .subInfo .Type {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+}
+.MediaView .MediaChapterContainer {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 5vw;
+}
+.MediaView .MediaChapterContainer .MediaChapter {
+  display: flex;
+  width: 15vw;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: var(--impactColor);
+  color: var(--darkestColor);
+  align-items: center;
+  padding-left: 10px;
+}
+@media (max-width: 1000px) {
+  .MediaView .MediaChapterContainer .MediaChapter {
+    width: 35vw;
+  }
+}
+
+/*# sourceMappingURL=MediaView.css.map */
